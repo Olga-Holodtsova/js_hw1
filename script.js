@@ -80,17 +80,13 @@ function getLegalAgePeople(arr, ageParamName) {
  * 
  * tip: use .filter method or for()
  */
-function getPeopleWhoHaveMoneyForAlcohol(arr) {
-    // WRITE CODE HERE
-    const result = arr.filter(function (person) {
-        const alcoholName = person.desiredAlcoholName;
-        const alcoholPrice = alcoholPriceForOneItem[alcoholName];
-        const purchaseAmount = alcoholPrice * person.desiredAlcoholAmount;
-        const enoughMoney = purchaseAmount <= person.moneyAmount;
-        return enoughMoney;
+const enoughMoney = arr.filter(function (person) {
+        if (person.moneyAmount > (alcoholPriceForOneItem[person.desiredAlcoholName]*person.desiredAlcoholAmount));
+        return person.moneyAmount;
     });
-    return result;
-}
+    return enoughMoney;
+    }
+
 
 /**
  * Function is used to get array of strings
