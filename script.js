@@ -64,13 +64,12 @@ const LEGAL_AGE = 18;
  */
 function getLegalAgePeople(arr, ageParamName) {
     // WRITE CODE HERE
-    const result = arr.filter(function (person) {
-        const age = person[ageParamName];
-        const getLegalAge = age >= LEGAL_AGE;
-        return getLegalAge;
+   const LegalAgePeople = arr.filter(function (person) {
+        if (person.age >= LEGAL_AGE);
+        return person.age;
     });
-    return result;
-}
+    return LegalAgePeople;
+    }
 
 /**
  * Function is used to filter array of objects
