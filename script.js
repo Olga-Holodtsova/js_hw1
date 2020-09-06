@@ -64,12 +64,15 @@ const LEGAL_AGE = 18;
  */
 function getLegalAgePeople(arr, ageParamName) {
     // WRITE CODE HERE
-   const LegalAgePeople = arr.filter(function (person) {
+
+    const LegalAgePeople = arr.filter(function (person) {
         if (person.age >= LEGAL_AGE);
         return person.age;
     });
     return LegalAgePeople;
     }
+
+    
 
 /**
  * Function is used to filter array of objects
@@ -80,12 +83,16 @@ function getLegalAgePeople(arr, ageParamName) {
  * 
  * tip: use .filter method or for()
  */
-const enoughMoney = arr.filter(function (person) {
+function getPeopleWhoHaveMoneyForAlcohol(arr) {
+    // WRITE CODE HERE
+
+    const enoughMoney = arr.filter(function (person) {
         if (person.moneyAmount > (alcoholPriceForOneItem[person.desiredAlcoholName]*person.desiredAlcoholAmount));
         return person.moneyAmount;
     });
     return enoughMoney;
     }
+
 
 
 /**
